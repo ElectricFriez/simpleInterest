@@ -8,6 +8,12 @@ void questionTwo;
 void questionThree;
 void questionFour;
 void questionFive;
+void questionSix;
+void questionSeven;
+void questionEight;
+void questionNine;
+void questionTen;
+void questionEleven;
 
 using namespace std;
 
@@ -159,5 +165,50 @@ void questionSix(rightAnswer = 6413) {
     cout << string(50, '\n');
     score = score + 1;
     questionSeven();
+  }
+}
+
+void questionSeven(rightAnswer = 816) {
+  cout << "Jose has 600 invested in a bank account" << endl;
+  cout << "with a 9% interest rate. The bank closed" << endl;
+  cout << "4 years after he had invested." << endl;
+  cout << "What was Jose's balance after the 4 years?" << endl;
+  if (userAnswer != rightAnswer) {
+    cout << "Nope!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score - 1;
+    questionEight();
+  }
+  else if (userAnswer = rightAnswer) {
+    cout << "Correct!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score + 1;
+    questionEight();
+  }
+}
+
+void questionEight(rightAnswer = 3) {
+  cout << "Julian Garcia has $7500 invested" << endl;
+  cout << "in a bank account with a 5% interest rate." << endl;
+  cout << "If he invested for 6 years, how much interest" << endl;
+  cout << "did Julian Garcia make?" << endl;
+  cout << "1. 11250" << endl;
+  cout << "2. 9750" << endl;
+  cout << "3. 2250" << endl;
+  if (userAnswer != rightAnswer) {
+    cout << "Nope!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score - 1;
+    questionNine();
+  }
+  else if (userAnswer = rightAnswer) {
+    cout << "Correct!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score + 1;
+    questionNine();
   }
 }
