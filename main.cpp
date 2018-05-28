@@ -152,6 +152,7 @@ void questionSix(rightAnswer = 6413) {
   cout << "it in SkyBlue Bank. The bank has a 7%" << endl;
   cout << "interest rate. In 3 years, how much will" << endl;
   cout << "Charlie make total?" << endl;
+  cin >> userAnswer;
   if (userAnswer != rightAnswer) {
     cout << "Nope!" << endl;
     system("pause");
@@ -173,6 +174,7 @@ void questionSeven(rightAnswer = 816) {
   cout << "with a 9% interest rate. The bank closed" << endl;
   cout << "4 years after he had invested." << endl;
   cout << "What was Jose's balance after the 4 years?" << endl;
+  cin >> userAnswer;
   if (userAnswer != rightAnswer) {
     cout << "Nope!" << endl;
     system("pause");
@@ -197,6 +199,7 @@ void questionEight(rightAnswer = 3) {
   cout << "1. 11250" << endl;
   cout << "2. 9750" << endl;
   cout << "3. 2250" << endl;
+  cin >> userAnswer;
   if (userAnswer != rightAnswer) {
     cout << "Nope!" << endl;
     system("pause");
@@ -212,3 +215,53 @@ void questionEight(rightAnswer = 3) {
     questionNine();
   }
 }
+
+void questionNine(rightAnswer = 2) {
+  cout << "Mr. Davis has $6000 invested" << endl;
+  cout << "in an account with a 7% interest." << endl;
+  cout << "How long would it take him to" << endl;
+  cout << "Accumulate a total of $6840?" << endl;
+  cout << "1. 5 years" << endl;
+  cout << "2. 2 years" << endl;
+  cout << "3. 3 years" << endl;
+  cin >> userAnswer;
+  if (userAnswer != rightAnswer) {
+    cout << "Nope!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score - 1;
+    questionTen();
+  }
+  else if (userAnswer = rightAnswer) {
+    cout << "Correct!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score + 1;
+    questionTen();
+  }
+} 
+
+void questionTen(rightAnswer = 1) {
+  cout << "Reagan has $4000 invested" << endl;
+  cout << "in an account with a 3% interest." << endl;
+  cout << "How long would it take her to" << endl;
+  cout << "Accumulate a total of $4048?" << endl;
+  cout << "1. 5 years" << endl;
+  cout << "2. 2 years" << endl;
+  cout << "3. 3 years" << endl;
+  cin >> userAnswer;
+  if (userAnswer != rightAnswer) {
+    cout << "Nope!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score - 1;
+    questionTen();
+  }
+  else if (userAnswer = rightAnswer) {
+    cout << "Correct!" << endl;
+    system("pause");
+    cout << string(50, '\n');
+    score = score + 1;
+    questionTen();
+  }
+} 
